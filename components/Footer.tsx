@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
   return (
-    <div className="relative flex h-full min-h-[30vh] w-full flex-row items-center  justify-center bg-[#232931] text-white">
+    <div className="relative flex h-full min-h-[30vh] w-full flex-row items-center  justify-center bg-[#232931] py-10 text-white">
       <div className=' absolute top-0 left-0 h-full w-full bg-[url("https://pixel-industry.com/wordpress/trucking/wp-content/themes/trucking/img/footer-bkg.png")] bg-cover bg-center mix-blend-screen' />
 
       <div className="grid grid-flow-row grid-cols-1 gap-5 sm:grid-cols-3 sm:grid-rows-1">
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mx-auto flex h-full w-full max-w-sm items-center justify-center  p-5">
+        <div className="mx-auto flex h-full w-full max-w-sm items-center justify-start p-5  sm:justify-center">
           <div className=" h-auto w-auto  font-Oswald">
             <p className="text-2xl leading-loose">Contact</p>
             <p className="font-RobotoC text-lg font-thin">
