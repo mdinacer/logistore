@@ -11,6 +11,7 @@ import {
   faWarehouse,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -36,7 +37,7 @@ export default function Hero() {
 
         <div className="flex h-full w-auto flex-auto flex-col items-center justify-center   ">
           <h1 className="flex flex-col pb-1 ">
-            <span className=" font-Raleway text-xl uppercase text-white sm:text-4xl font-thin">
+            <span className=" font-Raleway text-xl font-thin uppercase text-white sm:text-4xl">
               We Mastered
             </span>
             <span className="font-Raleway text-6xl font-bold uppercase text-white sm:text-9xl">
@@ -66,20 +67,36 @@ export default function Hero() {
         </div>
         <div className="flex w-full items-center justify-center px-10 py-5 sm:justify-end">
           <ul className="  flex   list-none flex-row font-RobotoC text-lg font-thin uppercase text-white ">
-            <li className="mx-2 list-item h-5 w-5">
-              <FontAwesomeIcon icon={faFacebook} />
+            <li className="mx-2 list-item h-5 w-5 ">
+              <Link href={'https://www.facebook.com/mdi.nacer.5'} passHref>
+                <a target={'_blank'} rel="noreferrer">
+                  <FontAwesomeIcon icon={faFacebook} />
+                </a>
+              </Link>
+            </li>
+            <li className="mx-2 list-item h-5 w-5 ">
+              <Link href={'https://www.instagram.com/poyzonous/'} passHref>
+                <a target={'_blank'} rel="noreferrer">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+              </Link>
+            </li>
+            <li className="mx-2 list-item h-5 w-5 ">
+              <Link
+                href={'https://www.linkedin.com/in/mohammedi-abdenasser/'}
+                passHref
+              >
+                <a target={'_blank'} rel="noreferrer">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+              </Link>
             </li>
             <li className="mx-2 list-item h-5 w-5">
-              <FontAwesomeIcon icon={faInstagram} />
-            </li>
-            <li className="mx-2 list-item h-5 w-5">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </li>
-            <li className="mx-2 list-item h-5 w-5">
-              <FontAwesomeIcon icon={faTwitter} />
-            </li>
-            <li className="mx-2 list-item h-5 w-5">
-              <FontAwesomeIcon icon={faGooglePlus} />
+              <Link href={'https://twitter.com/MohammediAbden2'} passHref>
+                <a target={'_blank'} rel="noreferrer">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
