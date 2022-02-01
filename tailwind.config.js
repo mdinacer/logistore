@@ -5,6 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      Oswald: ['"Oswald"', 'system-ui'],
+      RobotoC: ['"Roboto Condensed"', 'Georgia'],
+
+      Raleway: ['"Raleway"', 'Georgia'],
+      display: ['Oswald'],
+      body: ['"Roboto Condensed"'],
+    },
   },
+
   plugins: [],
 }
